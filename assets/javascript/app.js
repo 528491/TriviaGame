@@ -4,12 +4,16 @@ $(document).ready(function(){
     //when the user presses start. However, it is cleaner to have everything that changes
     //in one place.
 
-    var startButton = "<button id='startButton'>Start Game!</button>";
+    //var startButton = "<button id='startButton'>Start Game!</button>";
+    var startButton = $("<button>");
+    startButton.attr("id", "startButton");
+    startButton.text("Start Game!");
+    
     $("#startButtonContainer").append(startButton);
 
     //Clicking the button should initiate ...
     $("#startButton").click(function(){
-        
+        alert(soMuchStuff)
     });
 
 });
